@@ -4,14 +4,14 @@ class ChatsController < ApplicationController
   end
 
   def send_chat
-    # puts 'Hello!'
     puts params
-    # puts params[:chat_input]
-    # puts Pusher.app_id
-    # puts Pusher.key
-    # puts Pusher.secret
+
+    data = {username: current_user.username,
+                avatar: current_user.image.thumb.url,
+                chat_text: params[:chat_input]}
+
     #Pusher.trigger(channel_name, event_name, data_to_send_with_event)
-    Pusher.trigger('chatroom', 'message', params[:chat_input])
+    Pusher.trigger(params[:channel], 'message', data)
     render nothing: true
   end
 

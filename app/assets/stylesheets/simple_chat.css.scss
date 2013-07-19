@@ -7,9 +7,44 @@
     font-size: 24px;
   }
   #chat_input {
-    width: 85%;
+    width: 75%;
   }
   input[type=submit] {
     width: 10%;
   }
 }
+
+#chats {
+
+  .chat-alert {
+    background-color: lightgray;
+  }
+
+  p {
+    display: inline-block;
+    margin-left: 20px;
+  }
+
+}
+
+h1 {
+color: #40891b;
+font-family: Georgia, serif;
+margin-left: 14px;
+background-color: #edde95;
+padding: 10px;
+}
+
+#chats {
+  color: #245ea5;
+}
+
+#user-info {
+  position: fixed;
+  border: black;
+  top: 0;
+  right: 0;
+  background-color: grey;
+  border: 1px solid black;
+}
+

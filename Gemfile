@@ -4,12 +4,21 @@ source 'https://rubygems.org'
 ruby '2.0.0'
 gem 'rails', '4.0.0'
 
-gem 'nokogiri'
+gem 'nokogiri','1.5.0'
 gem 'pg'
 gem 'jquery-rails'
 gem 'haml'
 
+gem 'bcrypt-ruby', '3.0.0'
+#temp support for attr accessible
+
 gem 'pusher'
+
+##image upload gems
+gem 'rmagick'
+gem 'remotipart'
+gem 'fog', '1.12.1'
+gem 'carrierwave'
 
 group :production do
   #REQUIRED for Rails 4.0 on Heroku!

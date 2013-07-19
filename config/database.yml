@@ -4,5 +4,14 @@ development:
   database: simple_chat_development
   pool: 5
   host: localhost
-  username: dylanoshea
+  username: chriseichler
+  password:
+
+  production:
+  adapter: postgresql
+  encoding: unicode
+  database: simple_chat_development
+  pool: 5
+  host: localhost
+  username: chriseichler
   password:
